@@ -51,6 +51,7 @@ int main(){
 		L = L->next;
 	}
 	printf("\nend"); 
+    getchar();
 	return 0;   
 }
 
