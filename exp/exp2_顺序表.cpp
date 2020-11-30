@@ -6,7 +6,7 @@ struct Sorder{
     int data[MAX];
 }L;
 
-void showit(){
+void exchange(){
 	int temp;
     //主要的算法代码，进行交换
      for(int i=0;i<(L.length)/2;i++){
@@ -16,9 +16,7 @@ void showit(){
     }
     //输出即为逆序
     printf("所得到的逆序输出为：\n");
-    for(int i=0;i<MAX;i++){
-        printf("%d\t",L.data[i]);
-    }
+    
     
 }
 
@@ -53,7 +51,10 @@ int main(){
 	    scanf("%d",&c);
 	   switch(c){
 	   	case 1:{
-	   		showit();
+	   		exchange();
+			for(int i=0;i<MAX;i++){
+        printf("%d\t",L.data[i]);
+    }
 	   		break;
 	   	}
 	   	case 2:{
