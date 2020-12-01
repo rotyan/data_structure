@@ -36,7 +36,7 @@ void input(){
 int main(){
 	int c;
     L.length=0;
-       for(int i=0;i<MAX;i++){
+    for(int i=0;i<MAX;i++){
     	printf("请输入第%d个数据：\n",i);
     	scanf("%d",&L.data[i]);
         L.length++;
