@@ -16,8 +16,6 @@ void exchange(){
     }
     //输出即为逆序
     printf("所得到的逆序输出为：\n");
-    
-    
 }
 
 void input(){
