@@ -8,8 +8,12 @@ int main(){
     for(int i=1;i<6;i++){
         st.push(i);
     }
-    printf("TOP==%d",st.top());
+    int x;
+    scanf("%d",&x);
+    printf("TOP==%d\n%d",st.top(),x);
     getchar(); 
     return 0;
 }
+
+
 

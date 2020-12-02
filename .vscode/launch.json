@@ -5,11 +5,18 @@
 
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "(gdb) Launch",
             "preLaunchTask": "build",
             "type": "cppdbg",
             "request": "launch",
+
+            "console":"internalConsole",
+             //“none”/“internalConsole”	只输出到"调试控制台"，"internalConsole"是新版本vscode的选项
+            //“integratedTerminal”	同时输出到"调试控制台"和软件内置“终端”
+            //“externalTerminal”	输出到外部“终端”
+            
             "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
