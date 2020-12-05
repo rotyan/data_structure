@@ -19,7 +19,7 @@ bool isLeap(int year){
 int main(){
     int time1, y1, m1, d1;
     int time2, y2, m2, d2;
-    int ans = 1;
+    
     while(scanf("%d%d",&time1,&time2) != EOF){
         if(time1 > time2){
             int temp = time1;
@@ -28,6 +28,7 @@ int main(){
         }
         y1 = time1 / 10000, m1 = time1 / 100 % 100, d1 = time1 % 100;
         y2 = time2 / 10000, m2 = time2 / 100 % 100, d2 = time2 % 100;
+        int ans = 1;
         if(y1 < y2 || m1 < m2 || d1 < d2){
             d1++;
             if(d1 == month[m1][isLeap(y1)] + 1){
@@ -42,6 +43,5 @@ int main(){
         }
     printf("%d\n", ans); 
     }
-    getchar();
     return 0;
 }
