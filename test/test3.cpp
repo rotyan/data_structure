@@ -9,6 +9,8 @@ struct node{
 node* create(int Array[]){
     node *pre,*head,*p;
     head = new node;    //创建头节点
+    //无前驱节点
+    //数据域为空
     head->next = NULL;
     pre = head;
     for(int i = 0; i < MAX; i++){
@@ -31,6 +33,14 @@ node* swap(node* head){
         head = next;
     }
     return pre;
+}
+
+int big(node* head,int x){
+    int temp = -1;
+    node* p = head->next;
+    while(p != NULL){
+        if()
+    }
 }
 
 int main(){
