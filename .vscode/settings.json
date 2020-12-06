@@ -50,7 +50,12 @@
     "files.autoGuessEncoding": true,
     "explorer.confirmDragAndDrop": false,
     "workbench.colorTheme": "Visual Studio Dark",
-    "team.showWelcomeMessage": false
+    "team.showWelcomeMessage": false,
+
+    //解决中文乱码
+    "terminal.integrated.shellArgs.windows": ["-NoExit", "/c", "chcp 65001"],   
+    //K chcp 65001 >nul的含义是在运行cmd的时候将编码设置为65001;
+    //>nul是避免在控制台输出修改编码的信息，否则会输出active code page: 65001;
 }
 
 
