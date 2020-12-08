@@ -1,4 +1,6 @@
 #include<cstdio>
+#include<queue>
+using namespace std;
 
 struct node{
     int data;
@@ -34,4 +36,17 @@ void postorder(node* root){
     postorder(root->rchild);
     //访问根节点root并将数据域输出
     printf("%d\n",root->data);
+}
+
+//层序遍历
+void LayerOrder(node* root){
+    queue<node*> q;
+    q.push(root);
+    while(!q.empty()){
+        node* now = q.front();
+        q.pop();
+        printf("%d\n",now->data);
+        if(now->lchild != NULL) q.push(now->lchild);    //左子树非空
+        if(now->rchild != NULL) q.push(now->rchild);
+    }
 }
