@@ -40,13 +40,13 @@ void postorder(node* root){
 
 //层序遍历
 void LayerOrder(node* root){
-    queue<node*> q;
-    q.push(root);
+    queue<node*> q; //队列里存地址
+    q.push(root);   //将根节点入队列
     while(!q.empty()){
-        node* now = q.front();
+        node* now = q.front();  //取处队首元素
         q.pop();
         printf("%d\n",now->data);
         if(now->lchild != NULL) q.push(now->lchild);    //左子树非空
-        if(now->rchild != NULL) q.push(now->rchild);
+        if(now->rchild != NULL) q.push(now->rchild);    //右子树非空
     }
 }
