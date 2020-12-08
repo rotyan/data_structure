@@ -50,3 +50,10 @@ void LayerOrder(node* root){
         if(now->rchild != NULL) q.push(now->rchild);    //右子树非空
     }
 }
+
+//如何创建二叉树binary_tree?
+int main(){
+
+    getchar();
+    return 0;
+}
