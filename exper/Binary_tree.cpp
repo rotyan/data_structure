@@ -7,6 +7,7 @@ struct node{
     node* lchild;
     node* rchild;
 };
+
 //先序遍历
 void preorder(node* root){
     if(root == NULL) return;    //递归边界，到达空树
@@ -51,7 +52,6 @@ void LayerOrder(node* root){
     }
 }
 
-//如何创建二叉树binary_tree?
 int main(){
 
     getchar();
