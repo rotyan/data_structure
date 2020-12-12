@@ -53,7 +53,7 @@ void LayerOrder(node* root){
 }
 
 int main(){
-
+    //好几天没动笔了，烂了么？
     getchar();
     return 0;
 }
