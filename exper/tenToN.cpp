@@ -36,6 +36,6 @@ int TenToN(int x, int p){    //两个参数分别为目标p进制和该进制下
 
 int main(){
     printf("%d",TenToN(11，2));
-    
+    //？
     return 0;
 }
