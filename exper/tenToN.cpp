@@ -9,7 +9,7 @@ int nTo10(int x, int p){    //两个参数分别为当前p进制和该进制下�
     while(x){
         y += (x % 10) * product; 
         x /= 10;
-        product *= p;
+        product *= p;   //更具书上改进
     }
     return y;
 }
