@@ -1,9 +1,10 @@
 //顺序表的逆序 
 #include<stdio.h>
+#define NUM 2
 
 struct Sorder{
     int length;
-    int data[10];   //数据域
+    int data[NUM+1];   //数据域
 }L;
 
 void exchange(){
@@ -21,13 +22,13 @@ void exchange(){
 int main(){
 	int c;
     L.length=0;
-       for(int i=0;i<5;i++){
+       for(int i=0;i<NUM;i++){
     	printf("请输入第%d个数据：\n",i);
     	scanf("%d",&L.data[i]);
         L.length++;
     }
     exchange();
-    for(int i=0;i<10;i++){
+    for(int i=0;i<NUM;i++){
         printf("%d\n",L.data[i]);
     }
     getchar();

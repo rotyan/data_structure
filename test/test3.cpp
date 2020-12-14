@@ -54,7 +54,6 @@ int main(){
 //计数2        count++;
     }
 //计数3    printf("\n%d",count);
-
     printf("\n");
     swap(L);
     while(L != NULL){
