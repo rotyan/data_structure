@@ -1,8 +1,8 @@
 //顺序表的逆序 
 #include <stdio.h>
-#define NUM 20
+#define NUM 5
 
-struct Sorder{
+struct Array{
     int length; 
     int data[NUM + 1];    //数据域
 }L; 
@@ -17,31 +17,34 @@ void exchange(){
     }
     //输出即为逆序
     printf("所得到的逆序输出为：\n"); 
+    for(int i = 0; i < NUM; i++){
+        printf("%d\t",L.data[i]); 
+    }
 }
 
 void input(){
-	int temp; 
-	for(int i = NUM ; i <= 3; i--){
-        L.data[i] = L.data[i-1];
-	}
+	for(int i = 5; i < 3; i--){
+        L.data[i] = L.data[i-1];    //？为什么没用？
+ 	}
+/*
+    L.data[5] = L.data[4];
+    L.data[4] = L.data[3];
+    L.data[3] = L.data[2];
+*/
 	L.data[2] = 100; 
 	for(int i = 0; i < NUM + 1; i++){
-	printf("%d\t",L.data[i]); 
+	printf("%d\t",L.data[i]);  
 	}
 }
 
 int main(){
-	int c; 
     L.length = 0; 
-       for(int i = 0; i < NUM; i++){
+    for(int i = 0; i < NUM; i++){
     	printf("请输入第%d个数据：\n",i); 
     	scanf("%d",&L.data[i]); 
         L.length++; 
     }
     exchange(); 
-    for(int i = 0; i < NUM; i++){
-        printf("%d  ",L.data[i]); 
-    }
     printf("\n所得的插入后为：\n"); 
     input(); 
     getchar(); 
