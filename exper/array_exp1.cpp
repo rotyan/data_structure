@@ -24,7 +24,7 @@ void exchange(){
 
 void input(){
 	for(int i = 5; i < 3; i--){
-        L.data[i] = L.data[i-1];    //？为什么没用？水+！
+        L.data[i] = L.data[i-1];    //？为什么没用？水+1
  	}
 /*
     L.data[5] = L.data[4];
