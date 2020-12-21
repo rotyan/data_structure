@@ -1,4 +1,4 @@
-//顺序表的逆序 
+//【完成版】顺序表的逆序 
 #include <stdio.h>
 #define NUM 20
 

@@ -45,7 +45,7 @@ int main(){
 	int a[10]={1,2,3,4,5,6,7,8,9,0};  //对数组进行初始化 
 	sort(a,a+10,cmp);
     node *L = create(a);   	//新建链表，并返回头指针head给L 
-	L = L->next; 	//从第一个节点开始又数据域 
+	L = L->next; 	//从第一个节点开始有数据域 
 	while(L!=NULL){
 		printf("%d ",L->data);
 		L = L->next;
