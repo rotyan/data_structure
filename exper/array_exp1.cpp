@@ -23,7 +23,7 @@ void exchange(){
 }
 
 void input(){
-	for(int i = 5; i < 3; i--){
+	for(int i = NUM; i < 3; i--){
         L.data[i] = L.data[i-1];    //？为什么没用？水+1/水+2/水+3/水+4/水+5
  	}
 /*
@@ -48,4 +48,5 @@ int main(){
     printf("\n所得的插入后为：\n"); 
     input(); 
     getchar(); 
+    return 0;
 }
