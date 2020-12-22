@@ -52,6 +52,28 @@ void LayerOrder(node* root){
     }
 }
 
+//二叉树的新建节点
+node* newNode(int v){   //生成一个新节点，v为节点权值
+    node* Node = new node;
+    Node->data = v; //节点权值为v
+    Node->lchild = Node->rchild = NULL;
+    return Node;
+}
+
+//二叉树节点的插入
+void insert(node* &root, int x){
+    if
+}
+
+//二叉树的建立
+node* create(char data[], int n){
+    node* root = NULL;
+    for(int i = 0; i < n; i++){
+        insert(root, data[i]);
+    }
+    return root;
+}
+
 int main(){
     //好几天没动笔了，烂了么？
     getchar();
