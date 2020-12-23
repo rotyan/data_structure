@@ -23,7 +23,7 @@ void exchange(){
 }
 
 void input(){
-	for(int i = NUM; i > 3; i--){
+	for(int i = NUM; i > 2; i--){
         L.data[i] = L.data[i-1];    //从L.data[1]之后所有数据往后移动一格
  	}
 	L.data[2] = 100; 
