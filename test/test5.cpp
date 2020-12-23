@@ -9,7 +9,7 @@ struct node{
 };
 char pre[MAX], in[MAX];   //储存先序、中序的数据
 int n;  //n为节点个数
-//二叉树的建立
+//二叉树的建立，利用已知的先序和中序来求树
 node* create(int preL, int preR, int inL, int inR){
     if(preL > preR){
         return NULL; //先序序列长度小于等于0时直接返回
