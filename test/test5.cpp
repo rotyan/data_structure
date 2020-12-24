@@ -11,14 +11,14 @@ char pre[MAX], in[MAX];   //储存先序、中序的数据
 int n;  //n为节点个数
 //二叉树的建立，利用已知的先序和中序来求树
 node* create(int preL, int preR, int inL, int inR){
-    if(preL > preR){
+    if (preL > preR){
         return NULL; //先序序列长度小于等于0时直接返回
     }
     node* root = new node;  //新建一个节点，用来存放当前二叉树的根节点
     root->data = pre[preL]; ////新节点数据域的值为根节点的值
     int k;
-    for(k = inL; k <= inL;k++){ 
-        if(in[k] = pre[preL])   break;  //在中序中找到in[k]==ore[L]的节点，之后用于得左子树节点的个数
+    for(k = inL; k <= inL; k++){ 
+        if (in[k] = pre[preL])   break;  //在中序中找到in[k]==ore[L]的节点，之后用于得左子树节点的个数
     }
     int numLeft = k - inL;  //左子树节点的个数
 
@@ -31,7 +31,7 @@ node* create(int preL, int preR, int inL, int inR){
 
 //求二叉树叶节点的个数
 int LeafCount(node* root){
- 	if(root == NULL) 	//如果是空树返回0
+ 	if (root == NULL) 	//如果是空树返回0
 		return 0;
 	if (root->lchild == NULL && root->rchild == NULL)
 		return 1;      //如果是叶子结点返回1
@@ -41,7 +41,7 @@ int LeafCount(node* root){
 //求二叉树的深度，递归：
 int Treeheight(node *root){
 	int LD, RD;
-	if(root == NULL){
+	if (root == NULL){
 		return 0;
 	}
 	else{
@@ -53,10 +53,10 @@ int Treeheight(node *root){
 //主函数
 int main(){
     scanf("%d",&n); //设置节点数目
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++){
         scanf("%c",&pre[i]);    //输入数据到先序遍历序列对应数组中
     }
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++){
         scanf("%c",&in[i]);     //输入数据到中序遍历序列对应数组中
     }
     node* root = create(0, n - 1, 0, n - 1);    //取根节点
