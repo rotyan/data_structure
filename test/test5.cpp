@@ -38,7 +38,7 @@ int LeafCount(node* root){
 	else return LeafCount(root->lchild) + LeafCount(root->rchild);  //递归
 }
 
-//求二叉树的深度，递归：
+//求二叉树的深度，递归：    //还有问题
 int Treeheight(node *root){
 	int LD, RD;
 	if (root == NULL){
