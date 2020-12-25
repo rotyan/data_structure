@@ -15,7 +15,7 @@ void exchange(){
          L.data[i] = L.data[L.length-i-1]; 
          L.data[L.length-i-1] = temp; 
     }
-    //输出即为逆序
+    //在exchange函数中输出即为逆序，这里是副本传递吗？
     printf("所得到的逆序输出为：\n"); 
     for(int i = 0; i < NUM; i++){
         printf("%d\t",L.data[i]); 
