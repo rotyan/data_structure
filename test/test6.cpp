@@ -6,7 +6,7 @@ struct node {
     node* rchild;
 };
 
-node* newNode();
+node* newNode(int x);
 //search函数用于查找二叉树中数据域为x的节点
 void search(node* root, int x) {
     if (root == NULL) {
@@ -53,6 +53,9 @@ node* Create(int data[], int n) {
 }
 
 int main() {
-
+    int n, data[]={12,3,15,6,1,8,19,20,33,24,17};
+    node* L = Create(data, sizeof(data)/4 + 1);
+    search(L, 56);
+    insert(L, 13);
     return 0;
 }
