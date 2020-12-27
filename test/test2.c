@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <windows.h>
 int main() {
-    printf("5\nabdec\ndbeac\n树的叶节点个数为3\n树的高度为3\n");
+    int n, data[]={12,3,15,6,1,8,19,20,33,24,17};
+    printf("%d", sizeof(data)/4 + 1);
     system("pause");
     return 0;
 }
