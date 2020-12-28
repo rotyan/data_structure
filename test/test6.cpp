@@ -64,19 +64,26 @@ void inorder(node* root) {
     //访问右指数
     inorder(root->rchild);
 }
+//简化对查找的输出格式
+void doSearch(node* L,int x){
+	printf("\n");
+    printf("这棵二叉树查找X=%d的数据结果为：",x);
+    search(L, x);
+}
 //主函数  
 int main() {
     int data[]={12,3,15,6,1,8,19,20,33,24,17};  //测试集
     int n = sizeof(data)/4 + 1; //简化处理，取测试集data长度+1，使二叉树节点数目多1，目的在于方便后边的节点插入
     node* L = Create(data, n);
-    printf("二叉树的中序遍历结果为：");
+    printf("\n二叉树的中序遍历结果为：\n");
     inorder(L); //输出原始二叉树的中序遍历结果
-    printf("\n");
-    printf("这棵二叉树查找X=56的数据结果为：");
-    search(L, 56);
-    printf("\n");  //输出原始二叉树的查找X=56的数据结果
-    printf("在二叉排序中插入数据13这个结点后中序遍历结果为：");
+    doSearch(L,53);	//输入查找的数据53，并输出原始二叉树的查找X=56的数据结果
+    doSearch(L,1);	//输入查找的数据1，并输出原始二叉树的查找X=1的数据结果
+    doSearch(L,13);	//输入查找的数据13，并输出原始二叉树的查找X=13的数据结果
+    doSearch(L,18);	//输入查找的数据18，并输出原始二叉树的查找X=18的数据结果
+    printf("\n在二叉排序中插入数据13这个结点后中序遍历结果为：\n");
     insert(L, 13);
     inorder(L);  //输出在二叉排序中插入数据13这个结点后中序遍历结果
+    doSearch(L,13);	//输入查找的数据13，并输出原始二叉树的查找X=13的数据结果
     return 0;
 }
