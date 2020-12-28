@@ -17,7 +17,7 @@ void search(node* root, int x) {
         return;
     }
     if (x == root->data) {  //节点数据值等于查找的数据，输出该数据
-        printf("该数据的值为：%d", root->data);
+        printf("查找成功，该数据的值为：%d", root->data);
     } else if (x < root->data) {
         search(root->lchild, x);     //由二叉查找树的性质，输入数据值小于根节点时向左子树递归查找
     } else {
