@@ -1,4 +1,4 @@
-//【完成版】有待加深理解
+//【完成版】有待加深理解，主要是插入的引用写法，新建，搜索的写法
 #include<cstdio>
 #include<queue>
 using namespace std;
