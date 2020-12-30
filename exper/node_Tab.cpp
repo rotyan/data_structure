@@ -18,7 +18,7 @@ struct node {
    
 struct node{
 	int data;
-	node *next;
+	node* next;
 };
 //创建链表 
 node* create(int Array[]){
