@@ -27,7 +27,7 @@ void listInsert(array &L, int m, int j){
         L.data[i] = L.data[i - 1];
     }
     L.data[m - 1] = j;
-    L.length++; //若形参为array L，则这里L.length为副本，最后第一次插入后输出为四个数据而非五个数据；副本
+    L.length++; //若形参为array L，则这里L.length为副本，最后第一次插入后输出为四个数据而非五个数据；【副本】
 }
 //L为引用的顺序表,m为删除位置（m-1为数组下标）；不需要列出数据的值j
 void listDelete(array &L, int m){
@@ -38,7 +38,7 @@ void listDelete(array &L, int m){
     for (int i = m - 1; i < L.length; i++){
         L.data[i] = L.data[i + 1];
     }
-    L.length--; //若形参为array L，则这里L.length为副本，最后第一次插入后输出为五个数据而非四个数据；值传递
+    L.length--; //若形参为array L，则这里L.length为副本，最后第一次插入后输出为五个数据而非四个数据；【值传递】
 }
 
 int main(){
