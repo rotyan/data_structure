@@ -1,4 +1,4 @@
-//单链表的查找、插入、删除
+//【完成版】单链表的查找、插入、删除【自行参透（除了create时参考了一下）】
 #include <cstdio>
 #define NUM 5   //新建的单链表节点个数
 
@@ -23,8 +23,12 @@ node* Create(int array[]){
     return head;
 }
 //head为头节点地址，n为插入数据的位置，m为插入数据的值
-node* nodeInsert(node* head, int n, int m){ //没有对初始输入数据位置进行判断！！！
-    int count = 1;  //计数器，头节点不算
+node* nodeInsert(node* head, int n, int m){
+    if (n < 1 || n > NUM){
+        printf("插入位置错误！");
+        return 0;
+    }
+    int count = 1;  //计数器从1开始，头节点不算
     node *pre, *p;
     pre = head;
     while(n != count){
@@ -39,6 +43,10 @@ node* nodeInsert(node* head, int n, int m){ //没有对初始输入数据位置�
 }
 //head为头节点地址，n为插入数据的位置
 node* nodeDelete(node* head, int n){
+    if (n < 1 || n > NUM){
+        printf("删除位置错误！");
+        return 0;
+    }
     int count = 1;
     node *pre;
     pre = head;
@@ -65,7 +73,7 @@ node* nodeSearch(node* head, int m){
 int main(){
     int a[] = {123,234453,456,65};
     node* L = Create(a);
-    nodeInsert(L,5,1000);
+    nodeInsert(L,15,1000);
     nodeSearch(L,65);
     printf("\n");
 //    nodeDelete(L,3);
