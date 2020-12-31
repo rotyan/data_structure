@@ -6,7 +6,7 @@ struct  node{
     int data;
     node* next;
 };
-
+//array为初始化时输入数据域所在数组
 node* Create(int array[]){
     node *pre, *p, *head;
     head = new node;
