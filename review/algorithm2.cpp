@@ -1,6 +1,6 @@
 //单链表的查找、插入、删除
 #include <cstdio>
-#define NUM 5
+#define NUM 5   //新建的单链表节点个数
 
 struct  node{
     int data;
@@ -23,8 +23,8 @@ node* Create(int array[]){
     return head;
 }
 //head为头节点地址，n为插入数据的位置，m为插入数据的值
-node* nodeInsert(node* head, int n, int m){
-    int count = 1;
+node* nodeInsert(node* head, int n, int m){ //没有对初始输入数据位置进行判断！！！
+    int count = 1;  //计数器，头节点不算
     node *pre, *p;
     pre = head;
     while(n != count){
@@ -50,9 +50,9 @@ node* nodeDelete(node* head, int n){
     return head;
 }
 //head为头节点地址，m为查找数据的值
-node* nodeSearch(node* head, int m){    //头节点算不算位置1?还是0？
-    int count = 0;
-    node *pre, *p;
+node* nodeSearch(node* head, int m){
+    int count = 0;  //这里算上了头节点，所以为计数器为零
+    node *pre;
     pre = head;
     while(m != pre->data){
         pre = pre->next;
@@ -65,10 +65,10 @@ node* nodeSearch(node* head, int m){    //头节点算不算位置1?还是0？
 int main(){
     int a[] = {123,234453,456,65};
     node* L = Create(a);
-    nodeInsert(L,3,1000);
+    nodeInsert(L,5,1000);
     nodeSearch(L,65);
     printf("\n");
-    nodeDelete(L,3);
+//    nodeDelete(L,3);
     L = L->next;
     while(L->next != NULL){
         printf("%d  ",L->data);
