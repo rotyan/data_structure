@@ -9,7 +9,7 @@ struct node {
     node* rchild;   //右指针
 };
 
-node* newNode(int x);   //声明创建二叉树的函数
+// node* newNode(int x);   //声明创建二叉树的函数       //c++中不需要声明？
 //search函数用于查找二叉树中数据域为x的节点
 void search(node* root, int x) {
     if (root == NULL) { //空树，查找失败；递归边界；查找位置
@@ -65,7 +65,7 @@ void inorder(node* root) {
     inorder(root->rchild);
 }
 //简化对查找的输出格式
-void doSearch(node* L,int x){
+void doSearch(node* &L,int x){  //运用&引用，不占用新的数据空间
 	printf("\n");
     printf("这棵二叉树查找X=%d的数据结果为：",x);
     search(L, x);

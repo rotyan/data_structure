@@ -60,7 +60,7 @@
     //设置背景图片
     "update.enableWindowsBackgroundUpdates": true,
     "background.customImages": [
-     "file:///C:/Users/rotyan/Pictures/Screenshots/kiana.png" //图片的路径
+     "file:///C:/Users/rotyan/Pictures/Screenshots/meiDObyona.png" //图片的路径
 ],
 "background.style": {
      "content": "''",
