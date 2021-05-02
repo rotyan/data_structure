@@ -12,7 +12,7 @@
             "type": "cppdbg",
             "request": "launch",
 
-            "console":"internalConsole",
+            "console":"internalConsole",    //换电脑注意安装code running之后的输出到终端
              //“none”/“internalConsole”	只输出到"调试控制台"，"internalConsole"是新版本vscode的选项
             //“integratedTerminal”	同时输出到"调试控制台"和软件内置“终端”
             //“externalTerminal”	输出到外部“终端”
@@ -24,7 +24,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "D:/app/C_install/bin/gdb.exe", // 这里修改GDB路径为安装的mingw64的bin下的gdb.exe路径
+            "miDebuggerPath": "H:\\develop_pro/C_install/bin/gdb.exe", // 这里修改GDB路径为安装的mingw64的bin下的gdb.exe路径//换电脑只需要重新配置win10环境变量和这里路径
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
