@@ -1,11 +1,11 @@
 //顺序表的插入、删除
-//【自己的改进写法】但是没有考虑插入或删除时数组空间已经满了怎么办
+//【自己的改进写法】但是需要再考虑插入或删除时数组空间已经满了怎么办
 #include <stdio.h>
 #define NUM 4
 
 struct array{
     int data[NUM + 1];
-    int length; //善用这玩意
+    int length; //善用这玩意啊
 }L;
 
 void listInsert(array &L, int j, int m){   //i为插入元素,m为插入位置（m-1为数组下标）,n为顺序表长度
