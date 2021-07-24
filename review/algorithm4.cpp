@@ -1,5 +1,5 @@
 // 三种二叉树的遍历和深度计算
-#include<cstdio>
+#include <cstdio>
 
 struct node{
     int data;
