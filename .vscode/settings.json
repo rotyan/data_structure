@@ -60,19 +60,23 @@
     //设置背景图片
     "update.enableWindowsBackgroundUpdates": true,
     "background.customImages": [
-     "file:///C:/Users\\rotyan\\OneDrive\\图片\\屏幕快照\\2021-01-01 (1).png" //图片的路径  //换电脑之后随便调
-],
-"background.style": {
-     "content": "''",
-     "pointer-events": "none",
-     "position": "absolute", //定位
-     "width": "100%",
-     "height": "100%",
-     "z-index": "99999",
-     "background.repeat": "no-repeat", //是否重复
-     "background-size": "100%,100%", //图片大小
-     "opacity": 0.2 //透明度
-},
+        //"file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\natu_selee.png " ,//图片的路径
+        "file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\natu2_selee.png " ,
+        "file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\bir_sakura.png " ,
+        "file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\keri_teriteri.png "
+    ],
+    "background.style": {
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute", //定位
+        "width": "100%",
+        "height": "100%",
+        "z-index": "99999",
+        "background.repeat": "no-repeat", //是否重复
+        "background-size": "100%,100%", //图片大小
+        "opacity": 0.2 //透明度
+   },
+"background.loop": true,
 "background.useFront": true,
 "background.useDefault": false,
 "files.associations": {
