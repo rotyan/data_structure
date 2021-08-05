@@ -14,9 +14,8 @@ int main() {
     }
     while (sum > 999) {
         for (int i = 9; i >= 0; i--){
-            while (array[i]){
-                i;
-            }
+            do{
+                }while (array[i]);
         }
     }
     return 0;
