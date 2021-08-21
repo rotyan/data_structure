@@ -61,7 +61,8 @@
     "update.enableWindowsBackgroundUpdates": true,
     "background.customImages": [
         //"file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\natu_selee.png " ,//图片的路径
-        "file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\natu2_selee.png " ,
+        // "file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\natu2_selee.png " ,//图片的路径
+        "file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\bir_Bonary.png" ,//图片的路径        
         "file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\bir_sakura.png " ,
         "file:///C:\\Users\\rotyan\\Pictures\\Screenshots\\keri_teriteri.png "
     ],
