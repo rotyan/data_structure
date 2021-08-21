@@ -6,6 +6,7 @@
     "version": "0.2.0",
     "configurations": [
         
+        
         {
             "name": "(gdb) Launch",
             "preLaunchTask": "build",
@@ -24,7 +25,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "H:\\develop_pro/C_install/bin/gdb.exe", // 这里修改GDB路径为安装的mingw64的bin下的gdb.exe路径//换电脑只需要重新配置win10环境变量和这里路径
+            "miDebuggerPath": "D:\\app/C_install/bin/gdb.exe", // 这里修改GDB路径为安装的mingw64的bin下的gdb.exe路径//换电脑只需要重新配置win10环境变量和这里路径
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
