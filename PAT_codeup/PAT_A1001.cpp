@@ -16,7 +16,7 @@ int main() {
         array[len++] = sum % 10;        
         sum /= 10;
     }
-    for (int i = len - 1; i >= 0; i--){
+    for (int i = len - 1; i > 0; i--){
         printf("%d", array[i]);
         if (i % 3 == 0) printf(",");
     }
