@@ -20,15 +20,5 @@ int main() {
         printf("%d", array[i]);
         if (i % 3 == 0) printf(",");
     }
-    // for (int i = 0; i < 10; i++){
-    //     array[i] = (sum % 10) ;
-    // }
-    // while (sum > 999) {
-    //     for (int i = 9; i >= 0; i--){
-    //         while (array[i]){
-    //             printf("%d", sizeof(array[i]));
-    //         }
-    //     }
-    // }
     return 0;
 }
