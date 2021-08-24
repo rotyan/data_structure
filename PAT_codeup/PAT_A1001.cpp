@@ -10,7 +10,8 @@ int main() {
     } 
     int array[10];
     int len = 0;
-    if (!sum) array[len++] == 0; //sum为0时特殊处理
+    if (!sum) array[len++] == 0; 
+    //sum为0时特殊处理
     //将sum存入数组array[]中，低位对应低位
     while (sum) {
         array[len++] = sum % 10;        
