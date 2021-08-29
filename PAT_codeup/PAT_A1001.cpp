@@ -9,7 +9,7 @@ int main() {
         sum = 0 - sum;
     } 
     int array[10];
-    int len = 0;
+    int len = 0;    //可用STL的String
     //sum为0时特殊处理
     if (!sum) array[len++] == 0; 
     //将sum存入数组array[]中，低位对应低位
