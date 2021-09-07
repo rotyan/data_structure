@@ -3,8 +3,6 @@
 #define INF (1<<30)-1
 const double pi2 = 3.243;
 
-static int test = 2;
-
 int main(void) { 
     int i = INF;
     int a[5] = {};
@@ -22,6 +20,5 @@ int main(void) {
     printf("%d\n", sizeof(a[0]));
     printf("%d\n", strlen(p2));
     printf("%d\n", sizeof str);
-    printf("%d\n", test);
 	return 0;
 }
