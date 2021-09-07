@@ -3,7 +3,7 @@
 #define INF (1<<30)-1
 const double pi2 = 3.243;
 
-int main(void) { 
+int main() { 
     int i = INF;
     int a[5] = {};
     char b = 15555;
