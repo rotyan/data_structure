@@ -1,6 +1,6 @@
 #include <cstdio>
 #include <cstring>
-#define INF (1<<30)+1
+#define INF (1<<30) + 1
 const double pi2 = 3.243;
 
 int main() { 
